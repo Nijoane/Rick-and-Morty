@@ -1,0 +1,18 @@
+
+
+#input-char{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    background-size: 200px;   
+    margin: 1%;     
+    border-radius: 7px;
+    border-color: #D4F0FF;
+    background-color: #D4F0FF;
+           
+}
+label {display: block;}
+  input, button {padding: 10px;}
+  input {width: 40%;}
+
+  
