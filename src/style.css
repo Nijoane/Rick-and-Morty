@@ -9,66 +9,100 @@
 #root{
   width: 100vw;
   height: 100vh;
-
+  
   background-color: #D4F0FF;
 }
 
-.logo{
+#logo{
   width: 100vw;
   height: 20vh;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.logo img{
+#logo img{
   width: 30vw;
   height: 25vh;
 
   padding-top: 5vh;
 }
 
+#background-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#background-image img{
+  position: fixed;
+  top: 25vh;
+
+  width: 450px;
+  height: 450px;
+
+}
+
 #container-card{
-  width: 20vw;
-  height: 55vh;
+  position: absolute;
   margin: 5vw;
 
+  width: 16vw;
+  height: 55vh;
+  
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
  
   border: none;
   border-radius: 10px;
   background-color: #FFFFFF;
 }
 
-#container-card p{
+.character-name{
   padding: 5px;
 
   font-size: 18px;
+  font-weight: bold;
   color: #16ACC9;
 }
 
 #container-card img{
-  width: 15vw;
+  width: 14vw;
   height: 40vh;
 
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
-#container-card button{
+.button-card{
   position: absolute;
-  top: 78vh;
+  top: 46vh;
 
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 
   border: none;
-  border-radius: 40px;
+  border-radius: 60px;
   background: #FFE872;
 }
 
-#button-plus{
-  background-image: image('src/images/plus.svg');
+.button-card:hover {
+  position: absolute;
+  top: 46vh;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 60px;
+  background: #82E36C;
+}
+
+span.material-icons{
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
