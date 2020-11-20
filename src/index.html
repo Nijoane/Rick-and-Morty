@@ -4,19 +4,30 @@
     <meta charset="utf-8">
     <title>Rick and Morty</title>
     <link rel="stylesheet" href="style.css" />
-    
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">  
+
+   
   </head>
   <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-   
-    <input type="search" id="busca" placeholder="Busca por personagem">    
-    <button type="submit">&#128269;</button>
-    
+    <main id="root">
+
+      <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <button id="buscar">
+          <span class="material-icons">
+          search
+          </span>        
+        </button>
+      </div>
+      
+
+    </main>
+         
     
 
     
-
+  <script src="main.js" type="module"></script>
   </body>
 </html>
