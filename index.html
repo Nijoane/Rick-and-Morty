@@ -2,27 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Rick and Morty Universe</title>
+    <title>Rick and Morty</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> 
   </head>
   <body>
     <main id="root">
-      <div class="logo">
+      <div id="logo">
         <img 
           src="images/logo.png" 
           alt="rickandmorty"
         >
       </div>
-
+      <div id="background-image">
+        <img
+          src="images/portal.png" 
+          alt="background-image">
+      </div>
       <div id="container-card">
-        <p id="name">Rick Sanchez</p>
+        <span class="character-name" id="name">Rick Sanchez</span>
         <img 
+          class="character-image"
           src="images/rick.jpg" 
-          alt="character-rick"
+          alt="character-image"
         >
-        <button id="button-plus">
+        <button class="button-card" id="button-card">
+          <span class="material-icons">add</span>
         </button>
       </div>
     </main>
