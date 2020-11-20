@@ -1,18 +1,42 @@
 
+*{
+  background-color: #D4F0FF;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+#divBusca{
+  display: flex;
+  justify-content: center;
+  padding: 24px;  
+  border-color: #D4F0FF;
+  background-color: #D4F0FF;
 
-#input-char{
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    font-size: 25px;
-    background-size: 200px;   
-    margin: 1%;     
-    border-radius: 7px;
-    border-color: #D4F0FF;
-    background-color: #D4F0FF;
+
+}
+#txtBusca { 
+    font-family: 'Sanchez', serif;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #D4F0FF;    
+    width: 500px;
+    height: 42px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: none;
            
 }
-label {display: block;}
-  input, button {padding: 10px;}
-  input {width: 40%;}
 
+#buscar{
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: #FFFFFF; 
+    border: none;
+    margin-left: 5px;
+}
   
+span.material-icons{
+  background-color: #FFFFFF;
+}
