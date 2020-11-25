@@ -3,7 +3,9 @@
   padding: 0;
 
   box-sizing: border-box;
+
   font-family: 'Sanchez', serif;
+  background-color: #D4F0FF;
 }
 
 #root{
@@ -23,6 +25,7 @@
 }
 
 #logo img{
+  position: absolute;
   width: 30vw;
   height: 25vh;
 
@@ -39,48 +42,59 @@
   position: fixed;
   top: 25vh;
 
-  width: 450px;
-  height: 450px;
+  width: 600px;
+  height: 600px;
 
 }
 
 #container-card{
   position: absolute;
-  margin: 5vw;
 
-  width: 16vw;
-  height: 55vh;
+  margin-top: 5vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
   
+  background: none;
+}
+
+#create-card{
+  width: 22vw;
+  height: 60vh;
+
+  margin: 10px;
+
   display: flex;
   align-items: center;
   flex-direction: column;
- 
-  border: none;
+
   border-radius: 10px;
   background-color: #FFFFFF;
 }
 
 .character-name{
-  padding: 5px;
+  margin: 10px;
+  padding: none;
 
   font-size: 18px;
-  font-weight: bold;
   color: #16ACC9;
+  background: #FFFFFF;
 }
 
-#container-card img{
-  width: 14vw;
+.character-image{
+  width: 16vw;
   height: 40vh;
 
   border-radius: 10px;
 }
 
 .button-card{
-  position: absolute;
-  top: 46vh;
-
   width: 45px;
   height: 45px;
+
+  margin: 20px;
 
   border: none;
   border-radius: 60px;
@@ -88,11 +102,10 @@
 }
 
 .button-card:hover {
-  position: absolute;
-  top: 46vh;
-
   width: 45px;
   height: 45px;
+
+  margin: 20px;
 
   border: none;
   border-radius: 60px;
@@ -105,4 +118,5 @@ span.material-icons{
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;
 }
