@@ -56,5 +56,15 @@ function validar (evento) {
 const btnBusca = document.getElementById("buscar");
 btnBusca.addEventListener('click',validar)
 
-fetchCharacter();
+const statusMenu = document.getElementById("filtro-status");
+const speciesMenu = document.getElementById("filtro-species");
 
+
+reload.addEventListener("click", refreshPage);
+
+statusMenu.addEventListener("change", () => {
+  const retorno = window.data.getStatus(getCharacters, statusMenu.value);
+  show(retorno);
+  calc.innerHTML= percentStatus(getCharacters, retorno) + "%";
+});
+fetchCharacter();
