@@ -1,6 +1,10 @@
 function getEstatus(getPersonagens, estatus) {
   let resultFilter = getPersonagens.filter (el => el.estatus.includes(estatus));
   return resultFilter;
+
+/* eslint-disable no-console */
+export const exemple = () => {
+
 };
 
 function percentEstatus(estatus, resultFilter) {
