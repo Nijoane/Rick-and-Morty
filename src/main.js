@@ -2,15 +2,15 @@ import { } from './data.js';
 
 const fetchCharacter = () => {
   const characterId = 400;
-  const promises = [];
+  const promise = [];
 
   for(let id = 1; id <= characterId; id++){
     const  baseUrl = `https://rickandmortyapi.com/api/character/${id}`;
 
-    promises.push(fetch(baseUrl).then((response) => response.json()));
+    promise.push(fetch(baseUrl).then((response) => response.json()));
   }   
   
-  Promise.all(promises).then((resolve) => {
+  Promise.all(promise).then((resolve) => {
     const character = resolve.map((output) => ({
       id: output.id,
       name: output.name,
