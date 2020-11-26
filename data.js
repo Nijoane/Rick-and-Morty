@@ -1,19 +1,19 @@
-function getEstatus(getPersonagens, estatus) {
-  let resultFilter = getPersonagens.filter (el => el.estatus.includes(estatus));
-  return resultFilter;
+/* eslint-disable no-console */
+export const exemple = () => {
+
 };
 
-function percentEstatus(estatus, resultFilter) {
-  const perc = (resultFilter.length *100)/estatus.length;
+function percentStatus(status, resultFilter) {
+  const perc = (resultFilter.length *100)/status.length;
   return Math.round(perc);
 }
 
-function getSpecies(getPersonagens, especies) {
-  let resultSpecies = getPersonagens.filter(el => el.especies.includes(Species));
-  return resultEspecies;
+function getSpecies(getPersonagens, species) {
+  let resultSpecies = getPersonagens.filter(el => el.species.includes(species));
+  return resultSpecies;
 };
 
-function percentEspecies(especies, resultSpecies) {
-  let percent = (resultEspecies.length *100)/especies.length;
+function percentSpecies(species, resultSpecies) {
+  let percent = (resultSpecies.length *100)/species.length;
   return Math.round(percent);
 }
