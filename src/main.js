@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-console */
 import { } from './data.js';
 
 const fetchCharacter = () => {
@@ -46,8 +44,17 @@ const createCard = (character) => {
   ` 
   )
   .join('')
-
   cardElement.innerHTML = createCharacterCard;
 };
+
+function validar (evento) {
+  const texto = document.getElementById("txtBusca").value;
+
+  console.log(texto)
+}
+
+const btnBusca = document.getElementById("buscar");
+btnBusca.addEventListener('click',validar)
+
 fetchCharacter();
 
