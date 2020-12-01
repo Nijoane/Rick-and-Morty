@@ -1,4 +1,4 @@
-import { } from './data.js';
+// import { filterSort } from './data.js';
 
 const fetchCharacter = () => {
   const characterId = 400;
@@ -10,36 +10,40 @@ const fetchCharacter = () => {
     promise.push(fetch(baseUrl).then((response) => response.json()));
   }   
   
+  // eslint-disable-next-line no-undef
   Promise.all(promise).then((resolve) => {
     const character = resolve.map((output) => ({
       id: output.id,
       name: output.name,
       image: output.image,
-      species: output.species,
       status: output.status,
+      species: output.species,
       origin: output.origin.name,
-      location: output.location.name
+      location: output.location.name,
     }));
     createCard(character);
   });
 };
+fetchCharacter();
 
 const cardElement = document.getElementById("container-card")
-
 const createCard = (character) => {
-  console.log(character);
-
   const createCharacterCard = character.map((characters) => `
     <li id="create-card">
-      <span class="character-name" id="name">${characters.name}</span>
-      <img 
-        class="character-image"
-        src="${characters.image}" 
-        alt="character-image"
-      >
-      <button class="button-card" id="button-card">
-        <span class="material-icons">add</span>
-      </button> 
+      <div class="info-card">
+        <span class="character-name" id="name">${characters.name}</span>
+        <img 
+          class="character-image"
+          src="${characters.image}" 
+          alt="character-image"
+        >
+      </div>
+      <aside class="card-modal">
+        <span class="span-modal">Status: ${characters.status}</span>
+        <span class="span-modal">Specie: ${characters.species}</span>
+        <span class="span-modal">Origin: ${characters.origin}</span>
+        <span class="span-modal">Location: ${characters.location}</span>
+      </aside>
     </li>
   ` 
   )
@@ -47,24 +51,13 @@ const createCard = (character) => {
   cardElement.innerHTML = createCharacterCard;
 };
 
-function validar (evento) {
-  const texto = document.getElementById("txtBusca").value;
 
-  console.log(texto)
-}
 
 const btnBusca = document.getElementById("buscar");
-btnBusca.addEventListener('click',validar)
-
-const statusMenu = document.getElementById("filtro-status");
-const speciesMenu = document.getElementById("filtro-species");
-
-
-reload.addEventListener("click", refreshPage);
-
-statusMenu.addEventListener("change", () => {
-  const retorno = window.data.getStatus(getCharacters, statusMenu.value);
-  show(retorno);
-  calc.innerHTML= percentStatus(getCharacters, retorno) + "%";
-});
-fetchCharacter();
+function validar (event,){
+  event.preventDefault();
+  const texto = document.getElementById("txtBusca").value;
+  // eslint-disable-next-line no-console
+  console.log(texto);
+}
+btnBusca.addEventListener('keyup', validar);
