@@ -1,23 +1,17 @@
-function getEstatus(getPersonagens, estatus) {
-  let resultFilter = getPersonagens.filter (el => el.estatus.includes(estatus));
-  return resultFilter;
+window.filter = {
+  filterSort: (data, order) => {
+    if(order == '1-400') {
+      const orderAZ = data.sort((a, b) =>{
+        return (a.id - b.id);
+      })
+      return orderAZ;
 
-/* eslint-disable no-console */
-export const exemple = () => {
-
-};
-
-function percentEstatus(estatus, resultFilter) {
-  const perc = (resultFilter.length *100)/estatus.length;
-  return Math.round(perc);
-}
-
-function getSpecies(getPersonagens, especies) {
-  let resultSpecies = getPersonagens.filter(el => el.especies.includes(Species));
-  return resultEspecies;
-};
-
-function percentEspecies(especies, resultSpecies) {
-  let percent = (resultEspecies.length *100)/especies.length;
-  return Math.round(percent);
+    } else if(order == '400-1') {
+      const orderZA = data.sort((a, b) => {
+        return (b.id - a.id);
+      })
+    
+      return orderZA;
+    }
+  }
 }
