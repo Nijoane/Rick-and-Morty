@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 /* eslint-disable no-undef */
-import { } from './data.js';
+import {getSpecies} from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
 const fetchCharacter = () => {
   const characterId = 400;
@@ -52,9 +53,12 @@ const createCard = (character) => {
 function validar (event) {
   event.preventDefault();
   const texto = document.getElementById("txtBusca").value;
+  
+  const resultados = getSpecies(data.results, texto);
+  createCard(resultados);
+    
 
-  console.log(texto)
-}
+  }
 
 const btnBusca = document.getElementById("buscar");
 btnBusca.addEventListener('click',validar)
