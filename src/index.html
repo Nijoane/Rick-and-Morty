@@ -23,20 +23,18 @@
           alt="background-image">
       </div>
       <div id="divBusca">
-        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <input type="text" id="txtBusca" placeholder="Buscar personagem..."/>
         <button id="buscar">
-          <span class="material-icons">
-          search
-          </span>        
+          <span class="material-icons">search</span>        
         </button>
+        <select name="container-filter" id="filters">
+          <option value="">Ordenar A-Z</option>
+          <option value="">Ordenar Z-A</option>
+        </select>
       </div>  
-      <ul id="container-card"></ul>
 
-        <!-- <div id="modal" class="modal">
-          <div class="modal-content">
-            <span class="material-icons">remove</span>
-          </div>
-        </div> -->
+      <ul id="container-card"></ul>
+      
     </main>
     <script src="main.js" type="module"></script>
   </body>
