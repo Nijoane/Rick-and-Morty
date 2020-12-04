@@ -8,10 +8,9 @@
   font-family: 'Sanchez', serif;
   background-color: #D4F0FF;
 }
-
-#root{
+  #root{
   width: 100vw;
-  height: 100vh;
+  height: 100vh;  
   
   background-color: #D4F0FF;
 }
@@ -22,6 +21,7 @@
 
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -41,54 +41,80 @@
 
 #background-image img{
   position: fixed;
-  top: 25vh;
+  top: 28vh;
 
   width: 600px;
   height: 600px;
-
 }
 
 #divBusca{
+  position: absolute;
+
+  width: 100vw;
+  height: 15vh;
+
+  margin: 18px;
+  padding: 18px;  
+
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 24px;  
-  border-color: #D4F0FF;
-  background-color: #D4F0FF;
-
-
+  
+  background: none;
 }
 
 #txtBusca { 
-    font-family: 'Sanchez', serif;
-    font-size: 18px;
-    padding: 10px;
-    background-color: #D4F0FF;    
-    width: 500px;
-    height: 42px;
-    border: none;
-    background: #FFFFFF;
-    border-radius: 8px;
-    margin: none;
-           
+  width: 500px;
+  height: 50px;
+
+  margin: none;
+  padding: 10px;
+    
+  border: none;
+  border-radius: 8px;
+
+  background: #FFFFFF;
+  outline-color: #16ACC9;
+
+  font-size: 16px;
+  color: #16ACC9;
 }
 
 #buscar{
-    width: 42px;
-    height: 42px;
-    border-radius: 8px;
-    background: #FFFFFF; 
-    border: none;
-    margin-left: 5px;
+  width: 50px;
+  height: 50px;
+
+  margin-left: 5px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #FFFFFF; 
+  outline-color: #16ACC9;
+
+  cursor: pointer;
 }
   
 span.material-icons{
   background-color: #FFFFFF;
 }
 
-#container-card{
-  position: absolute;
+#filters{
+  margin: 10px;
 
-  margin-top: 5vh;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #16ACC9;
+
+  border-radius: 5px;
+  border-color: #16ACC9;
+  outline-color: #16ACC9;
+}
+
+#container-card{
+  position: relative;
+
+  margin-top: 20vh;
 
   display: flex;
   flex-wrap: wrap;
@@ -99,22 +125,51 @@ span.material-icons{
 }
 
 #create-card{
-  width: 22vw;
-  height: 60vh;
+  width: 40vw;
+  height: 55vh;
 
   margin: 10px;
 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: inline-flex;
+
 
   border-radius: 10px;
   background-color: #FFFFFF;
 }
 
+.info-card {
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: none;
+}
+
+.card-modal{
+  width: 60vw;
+  margin: 5%;
+
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 10px;
+  background-color: #FFE872;
+}
+
+.span-modal{
+  margin-left: 20px;
+  padding-bottom: 20px;
+  background: none;
+}
+
 .character-name{
-  margin: 10px;
+  margin: 15px;
   padding: none;
+
 
   font-size: 18px;
   color: #16ACC9;
@@ -126,35 +181,4 @@ span.material-icons{
   height: 40vh;
 
   border-radius: 10px;
-}
-
-.button-card{
-  width: 45px;
-  height: 45px;
-
-  margin: 20px;
-
-  border: none;
-  border-radius: 60px;
-  background: #FFE872;
-}
-
-.button-card:hover {
-  width: 45px;
-  height: 45px;
-
-  margin: 20px;
-
-  border: none;
-  border-radius: 60px;
-  background: #82E36C;
-}
-
-span.material-icons{
-  font-size: 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
 }
