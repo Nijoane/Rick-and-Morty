@@ -2,13 +2,13 @@
 *{
   margin: 0;
   padding: 0;
-  
+
   box-sizing: border-box;
+
   font-family: 'Sanchez', serif;
   background-color: #D4F0FF;
 }
-
-#root{
+  #root{
   width: 100vw;
   height: 100vh;  
   
@@ -190,6 +190,7 @@ span.material-icons{
   width: 16vw;
   height: 35vh;
 
+<<<<<<< HEAD
   border-radius: 10px; 
 }
 
@@ -342,3 +343,7 @@ span.material-icons{
     height: 60%;
   }
 } */
+=======
+  border-radius: 10px;
+}
+>>>>>>> f1bb986282ae42bdc2980bff41a2e6271d4df25c
