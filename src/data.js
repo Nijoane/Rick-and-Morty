@@ -1,17 +1,26 @@
-window.filter = {
-  filterSort: (data, order) => {
-    if(order == '1-400') {
-      const orderAZ = data.sort((a, b) =>{
-        return (a.id - b.id);
-      })
-      return orderAZ;
+export const searchCharacter = (data, name) => {
+  return data.filter(results => results.name.includes(name));
+}
 
-    } else if(order == '400-1') {
-      const orderZA = data.sort((a, b) => {
-        return (b.id - a.id);
-      })
+export const filterSort = (data, order) => {
+  if(order == "a-z"){
+    return data.sort(function(a, b){
+      if(a.name >= b.name){
+        return -1;
+
+      }else {
+        return 1;
+      }
+    });
     
-      return orderZA;
-    }
+  } else {
+    return data.sort(function(a, b){
+      if(a.name <= b.name){
+        return 1;
+
+      } else{
+        return -1;
+      }
+    });  
   }
 }
