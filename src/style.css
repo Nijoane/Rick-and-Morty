@@ -27,7 +27,7 @@
 
 #logo img{
   position: absolute;
-  width: 30vw;
+  width: 40vw;
   height: 25vh;
 
   padding-top: 5vh;
@@ -40,8 +40,8 @@
 }
 
 #background-image img{
-  position: fixed;
-  top: 28vh;
+  position: absolute;
+  top: 29vh;
 
   width: 600px;
   height: 600px;
@@ -53,7 +53,7 @@
   width: 100vw;
   height: 15vh;
 
-  margin: 18px;
+  margin: 30px;
   padding: 18px;  
 
   display: flex;
@@ -99,16 +99,23 @@ span.material-icons{
   background-color: #FFFFFF;
 }
 
-#filters{
-  margin: 10px;
+.btnOrder{
+  margin: 5px;
+  padding: 3px;
 
-  font-size: 14px;
-  font-weight: bolder;
-  color: #16ACC9;
+  border: #16ACC9 solid 2px;
+  border-radius: 5px ;
+  outline: #16ACC9;
+}
 
-  border-radius: 5px;
-  border-color: #16ACC9;
-  outline-color: #16ACC9;
+.btnOrder:hover{
+  margin: 6px;
+  padding: 5px;
+
+  color: #16ACC9 ;
+  border: #16ACC9 solid 2px;
+  border-radius: 5px ;
+  outline: #16ACC9;
 }
 
 #container-card{
@@ -148,8 +155,9 @@ span.material-icons{
 }
 
 .card-modal{
-  width: 60vw;
+  width: 65vw;
   margin: 5%;
+  padding: 3%;
 
   display: flex;
   align-items: baseline;
@@ -167,6 +175,7 @@ span.material-icons{
 }
 
 .character-name{
+  position: relative;
   margin: 15px;
   padding: none;
 
@@ -177,8 +186,90 @@ span.material-icons{
 }
 
 .character-image{
+  position: relative;
   width: 16vw;
-  height: 40vh;
+  height: 35vh;
 
-  border-radius: 10px;
+  border-radius: 10px; 
 }
+
+@media(min-width: 660px) and (max-width: 880px){
+  #logo img{
+    width: 60%;
+    height: 20%;
+  }
+
+  #background-image{
+    display: none;
+    width: 100%;
+    height: 20%;
+  }
+  #divBusca{
+    width: 100%;
+  }
+
+  #txtBusca{
+    width: 84%;
+
+  }
+
+  #buscar{
+    width: 20%;
+  }
+
+  .btnOrder{
+    width: 15%;
+  }
+  
+  #create-card{
+    padding-left: 5%;
+    width: 80%;
+  }
+
+  .character-image {
+    width: 100%;
+    height: 60%;
+  }
+} 
+
+@media(min-width: 330px) and (max-width: 660px){
+  #logo img{
+    width: 60%;
+    height: 20%;
+  }
+
+  #background-image{
+    display: none;
+    width: 100%;
+    height: 20%;
+  }
+
+  #divBusca{
+    width: 100%;
+  }
+
+  #txtBusca{
+    width: 84%;
+
+  }
+
+  #buscar{
+    width: 20%;
+  }
+
+  .btnOrder{
+    width: 20%;
+  }
+  
+  #create-card{
+    padding: 5%;
+    width: 80%;
+    height: 80%;
+  }
+
+  .character-image {
+    width: 100%;
+    height: 60%;
+  }
+}
+
