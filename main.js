@@ -1,7 +1,5 @@
-/* eslint-disable no-console */
 import { filterSort, searchCharacter } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
-
 
 const fetchCharacter = () => {
   const characterId = 400;
@@ -12,7 +10,6 @@ const fetchCharacter = () => {
 
     promise.push(fetch(baseUrl).then((response) => response.json()));
   }   
-  // eslint-disable-next-line no-undef
   Promise.all(promise).then((resolve) => {
     const character = resolve.map((output) => ({
       id: output.id,
@@ -22,12 +19,12 @@ const fetchCharacter = () => {
       species: output.species,
       origin: output.origin.name,
       location: output.location.name,
+
     }));
   
     createCard(character);
   });
 };
-fetchCharacter();
 
 const cardElement = document.getElementById("container-card")
 const createCard = (character) => {
@@ -55,13 +52,13 @@ const createCard = (character) => {
   cardElement.innerHTML = createCharacterCard;
 };
 
+
 document.getElementById("filters").addEventListener("change", () => {
   const listSort = document.getElementById("filters").value;
   const filterOrder = (filterSort(data.results, listSort));
 
   createCard(filterOrder);
 });
-
 
 const btnBusca = document.getElementById("buscar");
 const txtSearch = document.getElementById("txtBusca")
@@ -71,3 +68,7 @@ btnBusca.addEventListener('click', () => {
   
   createCard(results);
 });
+
+fetchCharacter();
+
+

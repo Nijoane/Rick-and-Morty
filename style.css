@@ -2,13 +2,13 @@
 *{
   margin: 0;
   padding: 0;
-  
+
   box-sizing: border-box;
+
   font-family: 'Sanchez', serif;
   background-color: #D4F0FF;
 }
-
-#root{
+  #root{
   width: 100vw;
   height: 100vh;  
   
@@ -213,3 +213,4 @@ span.material-icons{
   }
   
 } 
+
