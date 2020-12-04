@@ -190,7 +190,6 @@ span.material-icons{
   width: 16vw;
   height: 35vh;
 
-<<<<<<< HEAD
   border-radius: 10px; 
 }
 
@@ -274,76 +273,3 @@ span.material-icons{
   }
 }
 
-/* @media(min-width: 660px) and (max-width: 880px){
-  #divBusca{
-    width: 100%;
-  }
-
-  #txtBusca{
-    width: 84%;
-
-  }
-
-  #buscar{
-    width: 20%;
-  }
-
-  .btnOrder{
-    width: 15%;
-  }
-  
-  #create-card{
-    padding-left: 5%;
-    width: 80%;
-  }
-
-  .character-image {
-    width: 100%;
-    height: 60%;
-  }
-} 
-
-@media(min-width: 330px) and (max-width: 660px){
-  #logo img{
-    width: 60%;
-    height: 20%;
-  }
-
-  #background-image{
-    display: none;
-    width: 100%;
-    height: 20%;
-  }
-
-  #divBusca{
-    width: 100%;
-  }
-
-  #txtBusca{
-    width: 84%;
-
-  }
-
-  #buscar{
-    width: 20%;
-  }
-
-  .btnOrder{
-    width: 20%;
-  }
-  
-  #create-card{
-    padding: 5%;
-    width: 80%;
-    height: 80%;
-  }
-
-  .character-image {
-    width: 100%;
-    height: 60%;
-  }
-} */
-=======
-  border-radius: 10px;
-}
->>>>>>> f1bb986282ae42bdc2980bff41a2e6271d4df25c
