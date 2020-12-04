@@ -1,5 +1,4 @@
-// import { filterSort } from './data.js';
-
+import { filterSort } from './data.js';
 const fetchCharacter = () => {
   const characterId = 400;
   const promise = [];
@@ -10,7 +9,6 @@ const fetchCharacter = () => {
     promise.push(fetch(baseUrl).then((response) => response.json()));
   }   
   
-  // eslint-disable-next-line no-undef
   Promise.all(promise).then((resolve) => {
     const character = resolve.map((output) => ({
       id: output.id,
@@ -20,11 +18,11 @@ const fetchCharacter = () => {
       species: output.species,
       origin: output.origin.name,
       location: output.location.name,
+
     }));
     createCard(character);
   });
 };
-fetchCharacter();
 
 const cardElement = document.getElementById("container-card")
 const createCard = (character) => {
@@ -51,7 +49,7 @@ const createCard = (character) => {
   cardElement.innerHTML = createCharacterCard;
 };
 
-
+fetchCharacter();
 
 const btnBusca = document.getElementById("buscar");
 function validar (event,){
@@ -61,3 +59,4 @@ function validar (event,){
   console.log(texto);
 }
 btnBusca.addEventListener('keyup', validar);
+
