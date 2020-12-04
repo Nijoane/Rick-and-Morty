@@ -4,8 +4,8 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 const cardElement = document.getElementById("container-card");
 const createCard = (data) => {
-  const createCharacterCard = data.map((results) => {
-    return `
+const createCharacterCard = data.map((results) => {
+     return `
       <li id="create-card">
         <div class="info-card">
           <span class="character-name" id="name">${results.name}</span>
@@ -44,7 +44,6 @@ function orderA(e){
   createCard(filterOrderAZ);
 }
 document.getElementById("btnOrderAZ").addEventListener("click", orderA);
-
 
 function orderZ(e) {
   e.preventDefault()
