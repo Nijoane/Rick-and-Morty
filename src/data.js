@@ -1,25 +1,17 @@
+/* eslint-disable no-console */
 export const searchCharacter = (data, name) => {
-  return data.filter(results => results.name.includes(name));
+  return data.filter(results => results.name.toUpperCase().includes(name.toUpperCase()));
 }
 
-export const orderAZ =(data) => data.sort((a, b) => (a.name < b.name) ? - 1 : 1);
+export const orderAZ = (data) => data.sort((a, b) => (a.name < b.name) ? - 1 : 1);
 
-export const orderZA =(data) => data.sort((a, b) => (a.name > b.name) ? - 1 : 1);
+export const orderZA = (data) => data.sort((a, b) => (a.name > b.name) ? - 1 : 1);
 
-
-
-
-function percentStatus(status, resultFilter) {
-  const perc = (resultFilter.length *100)/status.length;
-  return Math.round(perc);
+export const getSpecies = (data, species) => {
+  return data.filter(results => results.species.includes(species));
 }
 
-export function getSpecies(getPersonagens, species) {
-  let resultSpecies = getPersonagens.filter(el => el.species.includes(species));
-  return resultSpecies;
-};
-
-function percentSpecies(species, resultSpecies) {
-  let percent = (resultSpecies.length *100)/species.length;
-  return Math.round(percent);
+export const getStatus = (data, status) => {
+  console.log(status)
+  return data.filter(results => results.status.includes(status));
 }
