@@ -28,6 +28,15 @@ const createCharacterCard = data.map((results) => {
   cardElement.innerHTML = createCharacterCard;
 };
 
+function validar (event) {
+  event.preventDefault();
+  const texto = document.getElementById("txtBusca").value;
+  
+  const resultados = getSpecies(data.results, texto);
+  createCard(resultados);
+    
+  }
+
 const btnBusca = document.getElementById("buscar");
 const txtSearch = document.getElementById("txtBusca")
 btnBusca.addEventListener('click', () => {
@@ -47,8 +56,6 @@ document.getElementById("btnOrderAZ").addEventListener("click", orderA);
 
 function orderZ(e) {
   e.preventDefault()
-  const filterOrderZA= orderZA(data.results);
-
-  createCard(filterOrderZA);
+  const filterOrderZA= orderZA(data.results);  createCard(filterOrderZA);
 }
 document.getElementById("btnOrderZA").addEventListener("click", orderZ);
