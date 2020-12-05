@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { searchCharacter,  orderAZ, orderZA}  from './data.js';
+import { searchCharacter,  orderAZ, orderZA, getSpecies}  from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const cardElement = document.getElementById("container-card");

@@ -23,4 +23,3 @@ function percentSpecies(species, resultSpecies) {
   let percent = (resultSpecies.length *100)/species.length;
   return Math.round(percent);
 }
-
