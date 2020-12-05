@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { searchCharacter,  orderAZ, orderZA, getSpecies, getStatus}  from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -30,8 +29,7 @@ const createCard = (data) => {
   .join('')
   cardElement.innerHTML = createCharacterCard;
 };
-
-createCard(data.results)
+createCard(data.results);
 
 btnSearch.addEventListener('click', () => {
   const characterSpecies = inputSearch.value;
