@@ -53,7 +53,7 @@ GOstaria de buscar personagens por nome e visualizá-los em cards, com informaç
 ___
 #### Protótipo de alta fidelidade
 ![prototipo](src/images/prototipo.png)
->Protótipo do projeto criado utilizando [Figma](https://www.figma.com/file/.7V7DeCV5b64RpHLb9bTceC/Data-Lovers).
+>Protótipo do projeto criado utilizando [Figma](https://www.figma.com/file/7V7DeCV5b64RpHLb9bTceC/Data-Lovers?node-id=0%3A1).
 ___
 ## Desevolvedoras
 Nicaely Joane [Github](https://github.com/Nijoane)</br>
