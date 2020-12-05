@@ -31,25 +31,27 @@ const createCard = (data) => {
   cardElement.innerHTML = createCharacterCard;
 };
 
+createCard(data.results)
+
 btnSearch.addEventListener('click', () => {
   const characterSpecies = inputSearch.value;
-  const results = getSpecies(data.results, characterSpecies);
-  
-   createCard(results);
+  const filterSpecies = (getSpecies(data.results, characterSpecies));
+
+   createCard(filterSpecies);
 });
 
 btnSearch.addEventListener('click', () => {
   const characterStatus = inputSearch.value;
-  const results = getStatus(data.results, characterStatus);
-  
-   createCard(results);
+  const filterStatus = (getStatus(data.results, characterStatus));
+
+   createCard(filterStatus);
 });
 
 btnSearch.addEventListener('click', () => {
   const characterName = inputSearch.value;
-  const results = searchCharacter(data.results, characterName);
-  
-   createCard(results);
+  const filterName = (searchCharacter(data.results, characterName));
+
+  createCard(filterName);
 });
 
 function orderA(e){
