@@ -1,10 +1,3 @@
-/* eslint-disable no-console */
-export const exemple = () => {
-
-};
-
-
-
 
 function percentStatus(status, resultFilter) {
   const perc = (resultFilter.length *100)/status.length;
@@ -20,4 +13,3 @@ function percentSpecies(species, resultSpecies) {
   let percent = (resultSpecies.length *100)/species.length;
   return Math.round(percent);
 }
-

@@ -1,7 +1,6 @@
-/* eslint-disable no-console */
 /* eslint-disable no-undef */
 import {getSpecies} from './data.js';
-import data from './data/rickandmorty/rickandmorty.js';
+import data from './data/rickandmorty/rickandmorty.js'
 
 const fetchCharacter = () => {
   const characterId = 400;
@@ -30,7 +29,7 @@ const fetchCharacter = () => {
 const cardElement = document.getElementById("container-card")
 
 const createCard = (character) => {
-  console.log(character);
+  ;
 
   const createCharacterCard = character.map((characters) => `
     <li id="create-card">
@@ -57,7 +56,6 @@ function validar (event) {
   const resultados = getSpecies(data.results, texto);
   createCard(resultados);
     
-
   }
 
 const btnBusca = document.getElementById("buscar");
