@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { searchCharacter,  orderAZ, orderZA, getSpecies}  from './data.js';
+import { searchCharacter,  orderAZ, orderZA, getSpecies, getStatus }  from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const cardElement = document.getElementById("container-card");
@@ -28,22 +28,35 @@ const createCharacterCard = data.map((results) => {
   cardElement.innerHTML = createCharacterCard;
 };
 
-function validar (event) {
-  event.preventDefault();
-  const texto = document.getElementById("txtBusca").value;
-  
-  const resultados = getSpecies(data.results, texto);
-  createCard(resultados);
-    
-  }
+const btnSpecie = document.getElementById("buscar");
+const inputSpecie = document.getElementById("txtBusca");
 
-const btnBusca = document.getElementById("buscar");
-const txtSearch = document.getElementById("txtBusca")
-btnBusca.addEventListener('click', () => {
-  const characterName = txtSearch.value;
+btnSpecie.addEventListener('click', () => {
+  const characterSpecie = inputSpecie.value;
+  const results = getSpecies(data.results, characterSpecie);
+  createCard(results);
+})
+  
+const btnStatus = document.getElementById("buscar");
+const inputStatus = document.getElementById("txtBusca");
+
+btnStatus.addEventListener('click', () => {
+  const characterStatus = inputStatus.value;
+  const results = getStatus(data.results, characterStatus);
+  console.log(results)
+  createCard(results);
+  
+})
+
+const btnName = document.getElementById("buscar");
+const inputName = document.getElementById("txtBusca");
+
+btnName.addEventListener('click', () => {
+  const characterName = inputName.value;
   const results = searchCharacter(data.results, characterName);
   
   createCard(results);
+  
 });
 
 function orderA(e){
