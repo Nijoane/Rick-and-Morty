@@ -1,11 +1,13 @@
-/* eslint-disable no-console */
-import { searchCharacter,  orderAZ, orderZA, getSpecies, getStatus }  from './data.js';
+import { searchCharacter,  orderAZ, orderZA, getSpecies, getStatus}  from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const cardElement = document.getElementById("container-card");
+const inputSearch = document.getElementById("txtBusca");
+const btnSearch = document.getElementById("buscar");
+
 const createCard = (data) => {
-const createCharacterCard = data.map((results) => {
-     return `
+  const createCharacterCard = data.map((results) => {
+    return `
       <li id="create-card">
         <div class="info-card">
           <span class="character-name" id="name">${results.name}</span>
@@ -27,40 +29,31 @@ const createCharacterCard = data.map((results) => {
   .join('')
   cardElement.innerHTML = createCharacterCard;
 };
+createCard(data.results);
 
-const btnSpecie = document.getElementById("buscar");
-const inputSpecie = document.getElementById("txtBusca");
+btnSearch.addEventListener('click', () => {
+  const characterSpecies = inputSearch.value;
+  const filterSpecies = (getSpecies(data.results, characterSpecies));
 
-btnSpecie.addEventListener('click', () => {
-  const characterSpecie = inputSpecie.value;
-  const results = getSpecies(data.results, characterSpecie);
-  createCard(results);
-})
-  
-const btnStatus = document.getElementById("buscar");
-const inputStatus = document.getElementById("txtBusca");
+   createCard(filterSpecies);
+});
 
-btnStatus.addEventListener('click', () => {
-  const characterStatus = inputStatus.value;
-  const results = getStatus(data.results, characterStatus);
-  console.log(results)
-  createCard(results);
-  
-})
+btnSearch.addEventListener('click', () => {
+  const characterStatus = inputSearch.value;
+  const filterStatus = (getStatus(data.results, characterStatus));
 
-const btnName = document.getElementById("buscar");
-const inputName = document.getElementById("txtBusca");
+   createCard(filterStatus);
+});
 
-btnName.addEventListener('click', () => {
-  const characterName = inputName.value;
-  const results = searchCharacter(data.results, characterName);
-  
-  createCard(results);
-  
+btnSearch.addEventListener('click', () => {
+  const characterName = inputSearch.value;
+  const filterName = (searchCharacter(data.results, characterName));
+
+  createCard(filterName);
 });
 
 function orderA(e){
-  e.preventDefault()
+  e.preventDefault();
   const filterOrderAZ = orderAZ(data.results);
 
   createCard(filterOrderAZ);
@@ -68,7 +61,10 @@ function orderA(e){
 document.getElementById("btnOrderAZ").addEventListener("click", orderA);
 
 function orderZ(e) {
-  e.preventDefault()
-  const filterOrderZA= orderZA(data.results);  createCard(filterOrderZA);
+  e.preventDefault();
+  const filterOrderZA= orderZA(data.results);
+
+  createCard(filterOrderZA);
 }
 document.getElementById("btnOrderZA").addEventListener("click", orderZ);
+
