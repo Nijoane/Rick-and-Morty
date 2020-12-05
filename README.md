@@ -11,9 +11,9 @@ Para acessar o projeto clique [aqui](https://costahadassa.github.io/Rick-and-Mor
 
 ## Sobre o Projeto
 
-__O projeto foi desenvolvido para os fãs da série Rick and Morty. <br/> 
-Criamos uma página web que ofereça uma apresentação dos personagens de acordo com as seguintes informações: nome, espécie, status e origem._
-___
+___O projeto foi desenvolvido para os fãs da série Rick and Morty. <br/> 
+Criamos uma página web que ofereça uma apresentação dos personagens de acordo com as seguintes informações: nome, espécie, status e origem.___
+
 <p align="center">
 <img width="600" height="300" src="src/images/Animated%20GIF-downsized_large.gif">
 </p>
