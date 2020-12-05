@@ -9,17 +9,11 @@ export const orderZA =(data) => data.sort((a, b) => (a.name > b.name) ? - 1 : 1)
 
 
 
-function percentStatus(status, resultFilter) {
-  const perc = (resultFilter.length *100)/status.length;
-  return Math.round(perc);
+export const getStatus = (data, status) => {  
+  return data.filter(results => results.status.includes(status));
 }
 
-export function getSpecies(getPersonagens, species) {
-  let resultSpecies = getPersonagens.filter(el => el.species.includes(species));
-  return resultSpecies;
+export const getSpecies = (data, species) => {
+  return data.filter(results => results.species.includes(species));
+ 
 };
-
-function percentSpecies(species, resultSpecies) {
-  let percent = (resultSpecies.length *100)/species.length;
-  return Math.round(percent);
-}
