@@ -1,5 +1,5 @@
-# Rick and Morty :earth_africa: :rocket:
-Para acessar o projeto clique [aqui](https://costahadassa.github.io/Rick-and-Morty/)!
+# Rick and Morty :earth_africa: 
+Para acessar o projeto clique [aqui](https://costahadassa.github.io/Rick-and-Morty/)! :rocket:
 
 ## Índice
 * [índice](#Índice)
@@ -18,7 +18,7 @@ Criamos uma página web que ofereça uma apresentação dos personagens de acord
 <img width="600" height="300" src="src/images/Animated%20GIF-downsized_large.gif">
 </p>
 
->_Desenvolvemos uma página com conteúdo que satisfaça sua curiosidae por meio de um design que fosse intuitivo e atraente para todos os fãs da série._
+>_Desenvolvemos uma página com conteúdo que satisfaz as curiosidades de todos os fãs da série por meio de um design intuitivo e atraente._
 
 
 ___
@@ -40,23 +40,24 @@ ___
 
 ## História de usuário
 
-Meu nome é Francesco, tenho 23 anos e sou fã da série Rick and Morty, o desenho me despertou a curiosidade sobre os personagens e as dimensões alternativas. 
-Procurei sites que explicassem detalhes da série mas não encontrei tantas informações sobre ela.
-Gostaria de encontrar um site onde pudesse ter mais de informações relevantes e detalhadas sobre Rick and Morty.
-Quero buscar os personagens pelo nome e visualizá-los em cards, com informações como imagem, nome, espécie, origem, localização atual e status, onde eu também consuiga filtrar essas informações :smile:.
+Meu nome é Francesco tenho 23 anos e sou fã da série Rick and Morty. O desenho me despertou a curiosidade sobre os personagens e as dimensões alternativas. 
+Procurei sites que explicassem detalhes da série mas não encontrei tantas informações sobre.
+Gostaria de encontrar um site onde pudesse ter mais informações relevantes e detalhadas sobre Rick and Morty.
+GOstaria de buscar personagens por nome e visualizá-los em cards, com informações como imagem, nome, espécie, origem, localização atual e status, onde eu também consiga filtrar essas informações :smile:.
 
 ## Protótipos
 
 #### Wireframe do projeto
 ![prototipo-baixa](src/images/baixa.jpg)
-> Antes da idealização de um protótipo de alto nível seguindo a história do usuário esse foi o primeiro desenho do protótipo.
+> Antes da idealização de um protótipo de alto nível seguindo a história do usuário esse foi o primeiro desenho do projeto.
 ___
 #### Protótipo de alta fidelidade
 ![prototipo](src/images/prototipo.png)
 >Protótipo do projeto criado utilizando [Figma](https://www.figma.com/file/.7V7DeCV5b64RpHLb9bTceC/Data-Lovers).
 ___
 ## Desevolvedoras
-Hadassa Costa [Github](https://github.com/Costahadassa)</br>
-Nicaely Joane [Github](https://github.com/Nijoane)
+Nicaely Joane [Github](https://github.com/Nijoane)</br>
+Hadassa Costa [Github](https://github.com/Costahadassa)
+
 
 Thank you! :smile:
