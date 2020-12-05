@@ -1,4 +1,5 @@
 # Rick and Morty :earth_africa: :rocket:
+Para acessar o projeto clique [aqui](https://costahadassa.github.io/Rick-and-Morty/)
 
 ## Índice
 * [índice](#Índice)
@@ -12,7 +13,7 @@
 
 O projeto foi desenvolvido para os fãs da série Rick and Morty. 
 Criamos uma página web que ofereça uma apresentação dos personagens de acordo com as seguintes informações: nome, espécie, status e origem.
-
+![projeto-final](src/images/Animated GIF-downsized_large.gif)
 Oferecemos uma página com conteúdo  que satisfaça sua curiosidade e por meio de um design intuitivo e atraente para todos os fãs da série.
 
 
