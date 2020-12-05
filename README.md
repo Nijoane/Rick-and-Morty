@@ -13,11 +13,12 @@ Para acessar o projeto clique [aqui](https://costahadassa.github.io/Rick-and-Mor
 
 O projeto foi desenvolvido para os fãs da série Rick and Morty. 
 Criamos uma página web que ofereça uma apresentação dos personagens de acordo com as seguintes informações: nome, espécie, status e origem.
-
+___
 <p align="center">
 <img width="600" height="300" src="src/images/Animated%20GIF-downsized_large.gif">
 </p>
 
+___
 Oferecemos uma página com conteúdo  que satisfaça sua curiosidade e por meio de um design intuitivo e atraente para todos os fãs da série.
 
 
@@ -45,15 +46,17 @@ Gostaria de encontrar um site onde pudesse ter mais de informações relevantes 
 Quero buscar os personagens pelo nome e visualizá-los em cards, com informações como imagem, nome, espécie, gênero, status vivo, morto ou desconhecido.
 
 ## Protótipos
-___
+
 #### Wireframe do projeto
 ![prototipo-baixa](src/images/baixa.jpg)
 > Antes da idealização de um protótipo de alto nível seguindo a história do usuário esse foi o primeiro desenho do protótipo.
-
+___
 #### Protótipo de alta fidelidade
 ![prototipo](src/images/prototipo.png)
 >Protótipo do projeto criado utilizando [Figma](https://www.figma.com/file/.7V7DeCV5b64RpHLb9bTceC/Data-Lovers).
-
+___
 ## Criadoras
-Hadassa Costa [Github](https://github.com/Costahadassa)
+Hadassa Costa [Github](https://github.com/Costahadassa)</br>
 Nicaely Joane [Github](https://github.com/Nijoane)
+
+Thank you! :kiss:
