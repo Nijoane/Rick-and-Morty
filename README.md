@@ -82,45 +82,45 @@ Em outras palavras, você aprenderá a:
 
 ### HTML e CSS
 
-* [ ] [Uso de HTML semântico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de seletores de CSS.
-* [ ] Construir sua aplicação respeitando o desenho realizado (protótipo).
-* [ ] [Uso de flexbox em CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* - [x] [Uso de HTML semântico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* - [x] Uso de seletores de CSS.
+* - [x] Construir sua aplicação respeitando o desenho realizado (protótipo).
+* - [x] [Uso de flexbox em CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### DOM e Web APIs
 
-* [ ] Uso de seletores de DOM.
-* [ ] Gerenciamento de eventos de DOM.
-* [ ] [Manipulação dinâmica de DOM.](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
+* - [x] Uso de seletores de DOM.
+* - [x] Gerenciamento de eventos de DOM.
+* - [x] [Manipulação dinâmica de DOM.](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
 (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript
 
-* [ ] Uso de condicionais (if-else | switch | operador ternário)
-* [ ] Uso de laços (for | for..in | for..of | while)
-* [ ] Uso de funções (parâmetros | argumentos | valor de retorno)
-* [ ] Manipular arrays (filter | map | sort | reduce)
-* [ ] Manipular objects (key | value)
-* [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+* - [x] Uso de condicionais (if-else | switch | operador ternário)
+* - [x] Uso de laços (for | for..in | for..of | while)
+* - [x] Uso de funções (parâmetros | argumentos | valor de retorno)
+* - [x] Manipular arrays (filter | map | sort | reduce)
+* - [x] Manipular objects (key | value)
+* - [x] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression e statements.
-* [ ] Diferenciar entre tipos de dados atômicos e estruturados.
+* - [x] Diferenciar entre expression e statements.
+* - [x] Diferenciar entre tipos de dados atômicos e estruturados.
 
 ### Testing
 
-* [ ] [Teste unitário.](https://jestjs.io/docs/pt-BR/getting-started)
+* - [x] [Teste unitário.](https://jestjs.io/docs/pt-BR/getting-started)
 
 ### Estrutura do código e guia de estilo
 
-* [ ] Organizar e dividir o código em módulos (Modularização)
-* [ ] Uso de identificadores descritivos (Nomenclatura | Semântica)
-* [ ] Uso de linter (ESLINT)
+* - [x] Organizar e dividir o código em módulos (Modularização)
+* - [x] Uso de identificadores descritivos (Nomenclatura | Semântica)
+* - [x] Uso de linter (ESLINT)
 
 ### Git e GitHub
 
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Gerenciar repositórios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboração no Github (branches | pull requests | |tags)
+* - [x] Uso de comandos de git (add | commit | pull | status | push)
+* - [x] Gerenciar repositórios de GitHub (clone | fork | gh-pages)
+* - [x] Colaboração no Github (branches | pull requests | |tags)
 
 ## 4. Considerações gerais
 
@@ -133,15 +133,21 @@ Em outras palavras, você aprenderá a:
 
 Os critérios considerados para que tenha terminado este projeto são:
 
-### Definição de produto
+## *Definição de produto*
 
-Documente brevemente seu trabalho no arquivo `README.md` de seu repositório,
+Fizemos esse projeto com a lista de personagens da série Rick and Morty. O projeto consiste em construir uma página web com um conjunto de dados definido, onde o usuário consiga filtrar, ordenar e receber informações relevantes. 
+
+<!-- Documente brevemente seu trabalho no arquivo `README.md` de seu repositório,
 contando como foi o processo de desenho e como você acredita que o produto possa
-resolver o problema (ou problemas) de seu usuário.
+resolver o problema (ou problemas) de seu usuário. -->
 
-### Histórias de usuário
+## *Histórias de usuário*
 
-Uma vez que entenda a necessidade dos usuários, escreva as [Historias de
+Meu nome é Francesco, tenho 23 anos e sou fã da série Rick e Morty, o desenho me despertou a curiosidade sobre os personagens e as dimensões alternativas. Procurei sites que explicassem detalhes da série mas, não encontrei tantas informações sobre ela.
+Gostaria de encontrar um site onde pudesse ter mais de informações relevantes e detalhadas sobre Rick e Morty.
+Quero buscar os personagens pelo nome e visualizá-los em cards, com informações como imagem, nome, espécie, gênero, status vivo, morto ou desconhecido.
+
+<!--Uma vez que entenda a necessidade dos usuários, escreva as [Historias de
 Usuario](https://pt.wikipedia.org/wiki/Hist%C3%B3ria_de_usu%C3%A1rio) que
 representem tudo que o usuário precisa fazer/ver. As **histórias de usuário**
 devem ser o resultado de seu processo de investigação/pesquisa de seus usuários.
@@ -150,7 +156,7 @@ Não esqueça de incluir a definição de pronto (_definition of done_) e os
 critérios de aceitação para cada uma.
 
 Na medida do possível, termine uma história de usuário antes de passar para a
-seguinte (cumpra com as definições de pronto + critérios de aceitação).
+seguinte (cumpra com as definições de pronto + critérios de aceitação). -->
 
 ### Desenho de interface do usuário
 
