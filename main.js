@@ -1,50 +1,29 @@
-/* eslint-disable no-undef */
-import {getSpecies} from './data.js';
-import data from './data/rickandmorty/rickandmorty.js'
+/* eslint-disable no-console */
+import { searchCharacter,  orderAZ, orderZA, getSpecies}  from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
-const fetchCharacter = () => {
-  const characterId = 400;
-  const promise = [];
-
-  for(let id = 1; id <= characterId; id++){
-    const  baseUrl = `https://rickandmortyapi.com/api/character/${id}`;
-
-    promise.push(fetch(baseUrl).then((response) => response.json()));
-  }   
-  
-  Promise.all(promise).then((resolve) => {
-    const character = resolve.map((output) => ({
-      id: output.id,
-      name: output.name,
-      image: output.image,
-      species: output.species,
-      status: output.status,
-      origin: output.origin.name,
-      location: output.location.name
-    }));
-    createCard(character);
-  });
-};
-
-const cardElement = document.getElementById("container-card")
-
-const createCard = (character) => {
-  ;
-
-  const createCharacterCard = character.map((characters) => `
-    <li id="create-card">
-      <span class="character-name" id="name">${characters.name}</span>
-      <img 
-        class="character-image"
-        src="${characters.image}" 
-        alt="character-image"
-      >
-      <button class="button-card" id="button-card">
-        <span class="material-icons">add</span>
-      </button> 
-    </li>
-  ` 
-  )
+const cardElement = document.getElementById("container-card");
+const createCard = (data) => {
+const createCharacterCard = data.map((results) => {
+     return `
+      <li id="create-card">
+        <div class="info-card">
+          <span class="character-name" id="name">${results.name}</span>
+          <img 
+            class="character-image"
+            src="${results.image}" 
+            alt="character-image"
+          >
+        </div>
+        <aside class="card-modal">
+          <span class="span-modal">Status: ${results.status}</span>
+          <span class="span-modal">Specie: ${results.species}</span>
+          <span class="span-modal">Origin: ${results.origin.name}</span>
+          <span class="span-modal">Location: ${results.location.name}</span>
+        </aside>
+      </li>
+    `
+  })
   .join('')
   cardElement.innerHTML = createCharacterCard;
 };
@@ -59,6 +38,24 @@ function validar (event) {
   }
 
 const btnBusca = document.getElementById("buscar");
-btnBusca.addEventListener('click',validar)
+const txtSearch = document.getElementById("txtBusca")
+btnBusca.addEventListener('click', () => {
+  const characterName = txtSearch.value;
+  const results = searchCharacter(data.results, characterName);
+  
+  createCard(results);
+});
 
-fetchCharacter();
+function orderA(e){
+  e.preventDefault()
+  const filterOrderAZ = orderAZ(data.results);
+
+  createCard(filterOrderAZ);
+}
+document.getElementById("btnOrderAZ").addEventListener("click", orderA);
+
+function orderZ(e) {
+  e.preventDefault()
+  const filterOrderZA= orderZA(data.results);  createCard(filterOrderZA);
+}
+document.getElementById("btnOrderZA").addEventListener("click", orderZ);
