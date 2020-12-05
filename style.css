@@ -8,10 +8,9 @@
   font-family: 'Sanchez', serif;
   background-color: #D4F0FF;
 }
-
-#root{
+  #root{
   width: 100vw;
-  height: 100vh;
+  height: 100vh;  
   
   background-color: #D4F0FF;
 }
@@ -22,12 +21,13 @@
 
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 #logo img{
   position: absolute;
-  width: 30vw;
+  width: 40vw;
   height: 25vh;
 
   padding-top: 5vh;
@@ -40,55 +40,88 @@
 }
 
 #background-image img{
-  position: fixed;
-  top: 25vh;
+  position: absolute;
+  top: 29vh;
 
   width: 600px;
   height: 600px;
-
 }
 
 #divBusca{
+  position: absolute;
+
+  width: 100vw;
+  height: 15vh;
+
+  margin: 30px;
+  padding: 18px;  
+
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 24px;  
-  border-color: #D4F0FF;
-  background-color: #D4F0FF;
-
-
+  
+  background: none;
 }
 
 #txtBusca { 
-    font-family: 'Sanchez', serif;
-    font-size: 18px;
-    padding: 10px;
-    background-color: #D4F0FF;    
-    width: 500px;
-    height: 42px;
-    border: none;
-    background: #FFFFFF;
-    border-radius: 8px;
-    margin: none;
-           
+  width: 500px;
+  height: 50px;
+
+  margin: none;
+  padding: 10px;
+    
+  border: none;
+  border-radius: 8px;
+
+  background: #FFFFFF;
+  outline-color: #16ACC9;
+
+  font-size: 16px;
+  color: #16ACC9;
 }
 
 #buscar{
-    width: 42px;
-    height: 42px;
-    border-radius: 8px;
-    background: #FFFFFF; 
-    border: none;
-    margin-left: 5px;
+  width: 50px;
+  height: 50px;
+
+  margin-left: 5px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #FFFFFF; 
+  outline-color: #16ACC9;
+
+  cursor: pointer;
 }
   
 span.material-icons{
   background-color: #FFFFFF;
 }
 
-#container-card{
-  position: absolute;
+.btnOrder{
+  margin: 5px;
+  padding: 3px;
 
-  margin-top: 5vh;
+  border: #16ACC9 solid 2px;
+  border-radius: 5px ;
+  outline: #16ACC9;
+}
+
+.btnOrder:hover{
+  margin: 6px;
+  padding: 5px;
+
+  color: #16ACC9 ;
+  border: #16ACC9 solid 2px;
+  border-radius: 5px ;
+  outline: #16ACC9;
+}
+
+#container-card{
+  position: relative;
+
+  margin-top: 20vh;
 
   display: flex;
   flex-wrap: wrap;
@@ -99,22 +132,53 @@ span.material-icons{
 }
 
 #create-card{
-  width: 22vw;
-  height: 60vh;
+  width: 40vw;
+  height: 55vh;
 
   margin: 10px;
 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: inline-flex;
+
 
   border-radius: 10px;
   background-color: #FFFFFF;
 }
 
+.info-card {
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: none;
+}
+
+.card-modal{
+  width: 65vw;
+  margin: 5%;
+  padding: 3%;
+
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 10px;
+  background-color: #FFE872;
+}
+
+.span-modal{
+  margin-left: 20px;
+  padding-bottom: 20px;
+  background: none;
+}
+
 .character-name{
-  margin: 10px;
+  position: relative;
+  margin: 15px;
   padding: none;
+
 
   font-size: 18px;
   color: #16ACC9;
@@ -122,39 +186,89 @@ span.material-icons{
 }
 
 .character-image{
+  position: relative;
   width: 16vw;
-  height: 40vh;
+  height: 35vh;
 
-  border-radius: 10px;
+  border-radius: 10px; 
 }
 
-.button-card{
-  width: 45px;
-  height: 45px;
+@media(min-width: 660px) and (max-width: 880px){
+  #logo img{
+    width: 60%;
+    height: 20%;
+  }
 
-  margin: 20px;
+  #background-image{
+    display: none;
+    width: 100%;
+    height: 20%;
+  }
+  #divBusca{
+    width: 100%;
+  }
 
-  border: none;
-  border-radius: 60px;
-  background: #FFE872;
-}
+  #txtBusca{
+    width: 84%;
 
-.button-card:hover {
-  width: 45px;
-  height: 45px;
+  }
 
-  margin: 20px;
+  #buscar{
+    width: 20%;
+  }
 
-  border: none;
-  border-radius: 60px;
-  background: #82E36C;
-}
+  .btnOrder{
+    width: 15%;
+  }
+  
+  #create-card{
+    padding-left: 5%;
+    width: 80%;
+  }
 
-span.material-icons{
-  font-size: 24px;
+  .character-image {
+    width: 100%;
+    height: 60%;
+  }
+} 
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
+@media(min-width: 330px) and (max-width: 660px){
+  #logo img{
+    width: 60%;
+    height: 20%;
+  }
+
+  #background-image{
+    display: none;
+    width: 100%;
+    height: 20%;
+  }
+
+  #divBusca{
+    width: 100%;
+  }
+
+  #txtBusca{
+    width: 84%;
+
+  }
+
+  #buscar{
+    width: 20%;
+  }
+
+  .btnOrder{
+    width: 20%;
+  }
+  
+  #create-card{
+    padding: 5%;
+    width: 80%;
+    height: 80%;
+  }
+
+  .character-image {
+    width: 100%;
+    height: 60%;
+  }
 }
